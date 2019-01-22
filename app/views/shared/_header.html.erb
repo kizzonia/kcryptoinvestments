@@ -15,7 +15,7 @@
         <div class="col-sm-6 al-right">
           <ul class="top-nav">
             <li><%= link_to "Help", faqs_path %></li>
-            <li><a href="mailto:support@nextcoinoptions.com?subject=feedback">Support</a></li>
+            <li><a href="mailto:support@kcryptoinvestments.com?subject=feedback">Support</a></li>
             <li><%= link_to "Login", new_user_session_path %></li>
             <li><%= link_to "Register", new_user_registration_path %></li>
           </ul>
@@ -49,27 +49,20 @@
         <ul class="nav navbar-nav">
           <li ><%= link_to "Home", root_path %>
           </li>
-          <li class="dropdown"><a href="#" class="dropdown-toggle">Knowledge Base <b class="caret"></b></a>
-            <ul class="dropdown-menu">
 
-                  <li>
-                    <%= link_to "About Us", page_path('about') %>
-                  </li>
-                  <li><a href="work-process.html">How it Works</a></li>
-                </ul>
+
 
 
                   <li><%= link_to "FAQ", faqs_path %></li>
 
 
-              <li><a href="#">Buy/Sell</a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <%= link_to "Coin Market", page_path('buy-sell') %>
-                  </li>
-                </ul>
-              </li>
+                  <li><a href="work-process.html">How it Works</a></li>
 
+              
+
+                  <li>
+                    <%= link_to "About Us", page_path('about') %>
+                </li>
           <li><%= link_to "Contact Us", new_contact_path %></li>
 
           <li class="quote-btn hidden-xs hidden-sm"><%= link_to "Get Started", new_user_registration_path, class: "btn" %></li>

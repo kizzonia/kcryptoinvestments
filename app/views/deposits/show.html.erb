@@ -1,6 +1,6 @@
 <div class="content">
   <div class="container-fluid">
-    <div class="col-md-12">
+    <div class="col-md-8 col-md-offset-2">
       <div class="card">
         <div class="header">
           <h4 class="title">Continue To Payment</h4>
@@ -22,25 +22,22 @@
 
         </div>
       </div>
+      </div>
 
 
 
 
 
 
-    <div class="col-md-12 col-sm-6">
+    <div class="col-md-8 col-md-offset-2">
         <div class="card">
             <div class="content">
                 <div class="row">
-                    <div class="col-xs-5">
-                        <div class="icon-big icon-success text-center">
-                            <i class="ti-wallet"></i>
-                        </div>
-                    </div>
-                    <div class="col-xs-7">
-                        <div class="numbers">
-                            <p> For Bitcoin Payments Please Use</p>
-                            <pre> 16bZjfHQB7oK9iec4uC3JznAEAsiWAZJNq</pre>
+
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="text-center">
+
+                            <%= image_tag "pay", class: "img-responsive" %>
                         </div>
                     </div>
                 </div>
@@ -49,8 +46,7 @@
         </div>
     </div>
 
-    <p class="text-center"><%= link_to "Return To Dasboard", root_path, class: "btn btn-primary" %> || <%= link_to "View Deposit History", deposits_path, class: "btn btn-primary" %></p>
-      </div>
-      </div>
+
   </div>
 </div>
+<p class="text-center"><%= link_to "Return To Dasboard", root_path, class: "btn btn-primary" %> || <%= link_to "View Deposit History", deposits_path, class: "btn btn-primary" %></p>
