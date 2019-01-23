@@ -1,0 +1,143 @@
+<div class="row">
+  <div class="" style=" background-size: cover;width:100% height:auto; background-image:url('<%= asset_path 'page-inside-bg.jpg' %>')">
+
+
+    <div class="page-head section row-vm light" >
+
+
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h1 style="font-size:36px;">How It Works</h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<%= render "shared/recieve" %>
+
+<div class="section section-pad bg-grey">
+  <div class="container">
+    <div class="section-head">
+      <div class="row text-center">
+        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+          <h2 class="heading-section">How To Get Started</h2>
+          <p>Welcome to get started with our trading platform please follow the prescribed instructions below</p>
+        </div>
+      </div>
+    </div>
+    <div class="gaps size-3x"></div>
+    <div class="tab-custom tab-custom-two">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-0 col-sm-8 col-sm-offset-2 res-m-bttm">
+          <ul class="nav nav-tabs">
+            <li class="active" data-toggle="tab" data-target="#tab1">
+              <div class="steps">
+                <span class="step-number">1</span>
+                <h4>Sign Up</h4>
+                <p>Get started by registering your details on our secure platform.</p>
+                <div class="gaps size-1x"></div>
+              </div>
+            </li>
+            <li data-toggle="tab" data-target="#tab2">
+              <div class="steps">
+                <span class="step-number">2</span>
+                <h4>Connect</h4>
+                <p>Connect your bank account, debit card, or credit card. To either your favourite bitcoin exchange or using our coin market you can get bitcoin for making your deposit </p>
+                <div class="gaps size-1x"></div>
+              </div>
+            </li>
+            <li data-toggle="tab" data-target="#tab3">
+              <div class="steps">
+                <span class="step-number">3</span>
+                <h4>Make And Sell Profits </h4>
+                <p>You can withdraw and sell your bitcoins at the coin market of to the private wallet of your choice.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5 col-sm-12 col-md-offset-1 text-center">
+          <!-- Tab panes -->
+          <div class="tab-content no-pd">
+            <div class="tab-pane fade in active" id="tab1">
+              <div class="steps-screen round">
+                <%= image_tag "step-screen-a.jpg" %>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tab2">
+              <div class="steps-screen round">
+                <%= image_tag "step-screen-b.jpg" %>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tab3">
+              <div class="steps-screen round">
+                <%= image_tag "step-screen-c.jpg" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Section -->
+<!--Section -->
+<div class="section section-pad bg-grey">
+  <div class="container">
+    <div class="row row-vm">
+      <div class="col-md-5">
+        <div class="round res-m-bttm">
+          <%= image_tag "illustration-md-e.png" %>
+        </div>
+      </div>
+      <div class="col-md-6 col-md-offset-1">
+        <div class="text-block">
+          <h2>How Bitcoin are earned?</h2>
+          <p>We make profits for you using our auto trading system and our expert traders managemental skills. We also have Market exchange networks to make the trade between crypto and fiat possible and easy for our clients</p>
+
+          <%= link_to "Get Started", new_user_registration_path, class: "btn btn-alt" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Section -->
+
+<!--Section -->
+<div class="section section-pad">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-4 res-m-bttm-lg">
+        <div class="box-alt">
+          <div class="image-icon">
+            <%= image_tag "box-icon-f.png" %>
+          </div>
+          <h4>Payment Options</h4>
+          <p>Make Mobile and accessible payments using our highly secure  and interactive payment system.</p>
+        </div>
+      </div>
+      <div class="col-md-4 res-m-bttm-lg">
+        <div class="box-alt">
+          <div class="image-icon">
+            <%= image_tag "box-icon-g.png" %>
+          </div>
+          <h4>Strong Security</h4>
+          <p>We are highly equipped with high cyber security tools.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box-alt">
+          <div class="image-icon">
+            <%= image_tag "box-icon-h.png" %>
+          </div>
+          <h4>World Coverage</h4>
+          <p>Access our platform from anywhere around the globe.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Section -->
