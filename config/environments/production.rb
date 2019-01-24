@@ -88,10 +88,17 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
-  config.action_mailer.default_url_options = { host: 'https://www.kcryptoinvestments.com/' }
+  config.action_mailer.default_url_options = { host: 'https://kcrypto.herokuapp.com/' }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-
+  ActionMailer::Base.smtp_settings = {
+    :port           => ENV['MAILGUN_SMTP_PORT'],
+    :address        => 'smtp.mailgun.org',
+    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+    :domain         => 'kcrypto.herokuapp.com',
+    :authentication => :plain,
+  }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
 
