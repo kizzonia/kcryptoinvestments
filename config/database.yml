@@ -87,6 +87,6 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
-  database: kcryptoinvestments_production
-  username: kcryptoinvestments
-  password: <%= ENV['KCRYPTOINVESTMENTS_DATABASE_PASSWORD'] %>
+  database: nunuexchange_production
+  username: nunuexchange
+  password: <%= ENV['NUNUEXCHANGE_DATABASE_PASSWORD'] %>
