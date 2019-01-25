@@ -37,6 +37,6 @@ class WithdrawsController < InheritedResources::Base
 
 
     def withdraw_params
-      params.require(:withdraw).permit(:amount, :payment_type, :email, :user_id)
+      params.require(:withdraw).permit(:amount, :payment_type, :email, :status, :plan, :user_id)
     end
 end
