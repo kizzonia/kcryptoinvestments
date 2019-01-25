@@ -11,7 +11,12 @@
               <h4 class="title"> Hi <%= @deposit.email %> Please Complete Your Deposit By Paying</h4>
               <p>
                 <strong>Amount:</strong>
-                $<%= @deposit.amount %>
+                <% market = 'USDT-BTC'
+                   url_ticker = 'https://bittrex.com/api/v1.1/public/getticker'
+                    response = HTTParty.get(url_ticker, query: {market: market})
+                    result = response["result"]
+                    @r_last = result["Last"] %>
+  <%= @deposit.amount %> || Current Bitcoin Value <%= @r_last %>
 
               </p>
             </div>
@@ -36,7 +41,8 @@
 
                     <div class="col-md-8 col-md-offset-2">
                         <div class="text-center">
-                          <h4>For Bitcoin Payment</h4>
+                          <h4>For Bitcoin Payment   Please Pay <strong><%= @deposit.amount.to_f / @r_last %></strong>
+</h4>
                             <%= image_tag "pay.jpg", class: "img-responsive" %>
                         </div>
                     </div>
